@@ -18,6 +18,14 @@ Use o [composer](https://getcomposer.org/) para instalar as dependências necess
 composer install
 ```
 
+Após a instalação das dependências, deve-se fazer as alterações necessárias no arquivo ```.env``` de acordo com o seu ambiente de desenvolvimento e por fim executar o seguinte comando na raiz do seu projeto:
+
+```bash
+php artisan migrate --seed
+```
+
+Esse comando vai criar toda estrutura necessária no seu banco de dados e alimentá-lo com dados iniciais necessários para o funcionamento. 
+
 Esse repositório possui 4 tags principais que indicam o passo a passo do desenvolvimento:
 
 1. A tag ```passo-1``` refere-se à instalação e configuração do Laravel Sanctum.
