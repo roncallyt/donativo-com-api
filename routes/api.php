@@ -26,4 +26,12 @@ Route::middleware('auth:sanctum')->group(function() {
         Route::patch('/{category}', 'Api\CategoryController@update')->name('category.update');
         Route::delete('/{category}', 'Api\CategoryController@delete')->name('category.delete');
     });
+
+    Route::prefix('posts')->group(function() {
+        Route::get('/', 'Api\PostController@index')->name('post.index');
+        Route::post('/', 'Api\PostController@store')->name('post.store');
+        Route::get('/{post}', 'Api\PostController@show')->name('post.show');
+        Route::patch('/{post}', 'Api\PostController@update')->name('post.update');
+        Route::delete('/{post}', 'Api\PostController@delete')->name('post.delete');
+    });
 });
