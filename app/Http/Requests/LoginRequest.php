@@ -21,7 +21,7 @@ class LoginRequest extends FormRequest
         ];
     }
 
-    public function messages() : array
+    public function messages(): array
     {
         return [
             'email.required' => __('validation.required'),
