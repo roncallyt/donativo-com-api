@@ -33,7 +33,7 @@ class PostRequest extends FormRequest
             'image.required' => __('validation.required'),
             'image.file' => __('validation.file'),
             'image.mimes' => __('validation.mimes'),
-            'image.size' => __('validation.size.file'),
+            'image.max' => __('validation.max.file'),
             'status.required' => __('validation.required'),
             'description.required' => __('validation.required'),
             'description.string' => __('validation.string'),
