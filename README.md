@@ -18,7 +18,15 @@ Use o [composer](https://getcomposer.org/) para instalar as dependências necess
 composer install
 ```
 
-Após a instalação das dependências, deve-se fazer as alterações necessárias no arquivo ```.env``` de acordo com o seu ambiente de desenvolvimento e por fim executar o seguinte comando na raiz do seu projeto:
+Após a instalação das dependências, deve-se fazer as alterações necessárias no arquivo ```.env``` de acordo com o seu ambiente de desenvolvimento.
+
+Caso não possua esse arquivo, copie o arquivo ```.env.example``` e mude o seu nome para ```.env``` e após fazer as alterações necessárias neste arquivo, execute o comando abaixo para gerar uma nova chave para a aplicação:
+
+```bash
+php artisan key:generate
+```
+
+Por fim execute o comando a seguir:
 
 ```bash
 php artisan migrate --seed
@@ -39,5 +47,10 @@ Para dar checkout em uma tag específica utilize o comando abaixo:
 git checkout passo-4
 ```
 
+Para dar checkout no projeto finalizado:
+
+```bash
+git checkout master
+```
 ## Licença
 [MIT](https://choosealicense.com/licenses/mit/)
